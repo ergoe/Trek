@@ -1,0 +1,105 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Nampa 16th 21st Trek</title>
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("pageScripts", required: false)
+       
+        <script type="text/javascript">
+
+            $(function() {
+                $('nav li ul').hide().removeClass('fallback');
+                $('nav li').hover(function() {
+                    $('ul', this).stop().slideToggle(200);
+                });
+            });
+
+            $(document).ready(function () {
+                var newYear = new Date();
+                newYear = new Date(2013, 07-1, 17, 6);
+                $('#defaultCountdown').countdown({ until: newYear,
+                                        timezone: -6});
+
+            });
+            
+            
+        </script> 
+    </head>
+    <body>
+        <div id="header">
+            
+                <div>
+                    <div id="banner">
+                        <span class="Three-Dee">TRUE TO THE FAITH</span><span id="defaultCountdown"></span>
+                    </div>
+                    <div class="subHeading">
+                        Nampa 16th and 21st Wards Youth Handcart Pioneer Trek 2013
+                    </div>
+                    <div class="navigation">
+                        <nav>
+                            <ul>
+                                <li>
+                                    @Html.ActionLink("Home", "Index", "Home") 
+                                </li>
+                                <li>
+                                    <a href="#">Preparation</a>
+                                    <ul class="fallback">
+                                        <li>
+                                            @Html.ActionLink("Spiritual", "Spiritual", "Preparation")
+                                        </li>
+                                        <li>
+                                            @Html.ActionLink("Physical", "Physical", "Preparation")
+                                        </li>
+                                        <li>
+                                            @Html.ActionLink("Packing List", "PackingList", "Preparation")
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Registration</a>
+                                </li>
+                                <li>
+                                    <a href="#">Heritage</a>
+                                    <ul class="fallback">
+                                        <li>
+                                            @Html.ActionLink("Pioneer Stories", "PioneerStories", "Heritage")
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Ma/Pa Info</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contacts</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div> <!-- navigation -->
+                </div> <!--content wrapper -->    
+            
+        </div> <!-- header -->
+        <div id="container">
+            <div id="aside">
+               
+            </div>
+            @RenderBody()     
+        </div> <!-- container -->
+        <footer>
+            <div id="footer">
+                <div class="float-center">
+                    <p>&copy; @DateTime.Now.Year - Eric Goeckeritz</p>
+                </div> <!-- float-left -->   
+            </div> <!--footer --> 
+        </footer>
+    </body >
+</html>
+
+
+
+
+
+ 
+
