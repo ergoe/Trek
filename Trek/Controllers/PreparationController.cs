@@ -26,5 +26,15 @@ namespace Trek.Controllers
             return View();
         }
 
+        public ActionResult DutyToGod()
+        {
+            return View();
+        }
+
+        public ActionResult PersonalProgress()
+        {
+            return View();
+        }
+
     }
 }

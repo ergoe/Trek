@@ -5,7 +5,10 @@
         <meta charset="utf-8"/>
         <title>Nampa 16th 21st Trek</title>
         @Styles.Render("~/Content/css")
+        @Styles.Render("~/Content/themes/base/css")
         @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryui")
+        @Scripts.Render("~/bundles/jquerycountdown")
         @RenderSection("pageScripts", required: false)
        
         <script type="text/javascript">
@@ -54,12 +57,26 @@
                                             @Html.ActionLink("Physical", "Physical", "Preparation")
                                         </li>
                                         <li>
+                                            @Html.ActionLink("Duty to God", "DutyToGod", "Preparation")
+                                        </li>
+                                        <li>
+                                            @Html.ActionLink("Personal Progress", "PersonalProgress", "Preparation")
+                                        </li>
+                                        <li>
                                             @Html.ActionLink("Packing List", "PackingList", "Preparation")
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="#">Registration</a>
+                                    <ul class="fallback">
+                                        <li>
+                                             @Html.ActionLink("Registration Form", "RegistrationForm", "Registration")
+                                        </li>
+                                        <li>
+                                             @Html.ActionLink("Permission Slip", "PermissionSlip", "Registration")
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#">Heritage</a>
@@ -70,7 +87,33 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#">Ma/Pa Info</a>
+                                    <a href="#">Ma/Pa Training</a>
+                                    <ul class="fallback">
+                                        <li>
+                                             @Html.ActionLink("Roles & Responsibilities", "RolesResponsibilities", "MaPa")
+                                        </li>
+                                        <li>
+                                             @Html.ActionLink("Trek Family", "TrekFamily", "MaPa")
+                                        </li>
+                                        <li>
+                                             @Html.ActionLink("Spiritual Preparation", "SpiritualPreparation", "MaPa")
+                                        </li>
+                                        <li>
+                                             @Html.ActionLink("Outdoor Skills", "OutdoorSkills", "MaPa")
+                                        </li>
+                                        <li>
+                                             @Html.ActionLink("Medical and Safety", "MedicalSafety", "MaPa")
+                                        </li>
+                                        <li>
+                                             @Html.ActionLink("Meals", "Meals", "MaPa")
+                                        </li>
+                                        <li>
+                                             @Html.ActionLink("Schedule", "Schedule", "MaPa")
+                                        </li>
+                                        <li>
+                                             @Html.ActionLink("Logistics", "Logistics", "MaPa")
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#">Contacts</a>
@@ -83,14 +126,14 @@
         </div> <!-- header -->
         <div id="container">
             <div id="aside">
-               
+                @Html.Partial("ImportantDatesPartial")  
             </div>
             @RenderBody()     
         </div> <!-- container -->
         <footer>
             <div id="footer">
                 <div class="float-center">
-                    <p>&copy; @DateTime.Now.Year - Eric Goeckeritz</p>
+                    <p>&copy; @DateTime.Now.Year - Ergoe Inc.</p>
                 </div> <!-- float-left -->   
             </div> <!--footer --> 
         </footer>

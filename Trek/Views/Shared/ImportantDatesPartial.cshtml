@@ -1,0 +1,152 @@
+﻿<script type="text/javascript">
+    
+
+    $(function () {
+        $("#dialog1").dialog({
+            autoOpen: false,
+            modal: true,
+            show: {
+                effect: "clip",
+                duration: 300
+            },
+            hide: {
+                effect: "fold",
+                duration: 500
+            }
+        });
+        //$("#Navigation li").live('click', function(e)
+        $("#trek_date").live('click',function() {
+            $("#dialog1").dialog("open");
+        });
+    });
+
+    //campout dialog
+    $(function () {
+        $("#dialog2").dialog({
+            autoOpen: false,
+            modal: true,
+            show: {
+                effect: "clip",
+                duration: 300
+            },
+            hide: {
+                effect: "fold",
+                duration: 500
+            }
+        });
+        //$("#Navigation li").live('click', function(e)
+        $("#campout_dialog").live('click', function () {
+            $("#dialog2").dialog("open");
+        });
+    });
+
+    //campout dialog
+    $(function () {
+        $("#dialog3").dialog({
+            autoOpen: false,
+            modal: true,
+            show: {
+                effect: "clip",
+                duration: 300
+            },
+            hide: {
+                effect: "fold",
+                duration: 500
+            }
+        });
+        //$("#Navigation li").live('click', function(e)
+        $("#pretrek_hike_dialog").live('click', function () {
+            $("#dialog3").dialog("open");
+        });
+    });
+
+    //Registration dialog
+    $(function () {
+        $("#dialog4").dialog({
+            autoOpen: false,
+            modal: true,
+            show: {
+                effect: "clip",
+                duration: 300,
+                
+            },
+            hide: {
+                effect: "fold",
+                duration: 500
+            }
+        });
+        //$("#Navigation li").live('click', function(e)
+        $("#registration_dialog").live('click', function () {
+            $("#dialog4").dialog("open");
+        });
+    });
+    
+    //Drop off dialog
+    $(function () {
+        $("#dialog5").dialog({
+            autoOpen: false,
+            modal: true,
+            show: {
+                effect: "clip",
+                duration: 300,
+                
+            },
+            hide: {
+                effect: "fold",
+                duration: 500
+            }
+        });
+        //$("#Navigation li").live('click', function(e)
+        $("#dropoff_dialog").live('click', function () {
+            $("#dialog5").dialog("open");
+        });
+    });
+
+    $('input[type=button]').live('click', function(event) {
+        var parentId = '#' + $(this).parent().attr("id");
+        $(parentId).dialog("close"); 
+    });
+    
+    
+</script>
+
+<div class="important_dates">
+    <div>Important Dates (click for details)</div>
+    <ul>
+        <li id="pretrek_hike_dialog">
+            <a href="#">Pre-Trek Hike: June 1, 2013</a>
+        </li>
+        <li id="registration_dialog">
+            <a href="#">Registration Deadline: June 1, 2013</a>
+        </li>
+        <li id="dropoff_dialog">
+            <a href="#">Drop off gear: July 16, 2013</a>
+        </li>
+        <li id="trek_date">
+            <a href="#">Trek: July 17-19, 2013</a>
+        </li>
+        <li id="campout_dialog">
+            <a href="#">Ward Campout: July 19-20, 2013</a>
+        </li>
+    </ul>
+    <div id="dialog1" title="Trek">
+        <p>Meet at the church at 6:30am.  Bring a "sack" breakfast.</p>
+        <input class="closeMess" type="button" value="Done" />
+    </div>
+    <div id="dialog2" title="Ward Campout">
+        <p>Both wards will be camping at <a href="http://bigo.byu.edu:8085/MRP-IDAHO/Camps.jsp?menuSelect=about&campSelect=53">Camp Hy Cliffs</a>.</p>
+        <input class="closeMess" type="button" value="Done" />
+    </div>
+    <div id="dialog3" title="Pre Trek Hike">
+        <p>Starting at Celebration Park, hiking to Lake Halverson.  Meet at the church at 8:00am.  Bring sack lunch.</p>
+        <input class="closeMess" type="button" value="Done" />
+    </div>
+    <div id="dialog4" title="Registration">
+        <p>Registration will be due on June 1st.</p>
+        <input class="closeMess" type="button" value="Done" />
+    </div>
+    <div id="dialog5" title="Drop off gear">
+        <p>Bring gear to the church, between 6:00pm - 7:00pm.</p>
+        <input class="closeMess" type="button" value="Done" />
+    </div>
+</div>

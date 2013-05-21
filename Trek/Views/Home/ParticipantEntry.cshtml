@@ -1,0 +1,31 @@
+﻿@model Trek.Models.ParticipantModel
+
+@{
+    ViewBag.Title = "ParticipantEntry";
+}
+
+<h2>ParticipantEntry</h2>
+
+@using (Html.BeginForm("AddParticipant", "ParticipantEntry"))
+{
+    <p>
+        First Name: @Html.TextBoxFor(x => x.Fname)
+    </p>
+    <p>
+        Last Name: @Html.TextBoxFor(x => x.Lname)
+    </p>
+    <p>
+        Role: @Html.TextBoxFor(x => x.Role)
+    </p>
+    <p>
+        Youth Class: @Html.TextBoxFor(x => x.ClassName)
+    </p>
+    <p>
+        Birth Date: @Html.TextBoxFor(x => x.BirthDate)
+    </p>
+    <p>
+        Age: @Html.TextBoxFor(x => x.Age)    
+    </p>
+    <input type="submit" id="submit" value="enter"/>
+    
+}

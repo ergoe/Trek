@@ -114,19 +114,39 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Controllers\ContactsController.cs" />
     <Compile Include="Controllers\HeritageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MaPaController.cs" />
+    <Compile Include="Controllers\ParticipantEntryController.cs" />
     <Compile Include="Controllers\PreparationController.cs" />
+    <Compile Include="Controllers\RegistrationController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ParticipantModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\Themes\Base\jquery-ui.css" />
     <Content Include="Content\jquery.countdown.css" />
+    <Content Include="Content\Themes\Base\jquery.ui.accordion.css" />
+    <Content Include="Content\Themes\Base\jquery.ui.all.css" />
+    <Content Include="Content\Themes\Base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\Themes\Base\jquery.ui.base.css" />
+    <Content Include="Content\Themes\Base\jquery.ui.button.css" />
+    <Content Include="Content\Themes\Base\jquery.ui.core.css" />
+    <Content Include="Content\Themes\Base\jquery.ui.datepicker.css" />
+    <Content Include="Content\Themes\Base\jquery.ui.dialog.css" />
+    <Content Include="Content\Themes\Base\jquery.ui.progressbar.css" />
+    <Content Include="Content\Themes\Base\jquery.ui.resizable.css" />
+    <Content Include="Content\Themes\Base\jquery.ui.selectable.css" />
+    <Content Include="Content\Themes\Base\jquery.ui.slider.css" />
+    <Content Include="Content\Themes\Base\jquery.ui.tabs.css" />
+    <Content Include="Content\Themes\Base\jquery.ui.theme.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
@@ -162,7 +182,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="images\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -190,6 +209,51 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\_TestPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\ImportantDatesPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MaPa\RolesResponsibilities.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MaPa\TrekFamily.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MaPa\SpiritualPreparation.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MaPa\OutdoorSkills.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MaPa\MedicalSafety.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MaPa\Meals.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MaPa\Schedule.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MaPa\Logistics.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Contacts\Contacts.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Registration\RegistrationForm.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Registration\PermissionSlip.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Preparation\DutyToGod.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Preparation\PersonalProgress.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\ParticipantEntry.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

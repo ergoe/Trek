@@ -16,9 +16,10 @@
 	clear: both;
 	/*width: 100%;*/
     width: 250px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-	padding: 0px 2px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    padding: 0px 2px;
 	text-align: center;
 }
 .countdown_show1 .countdown_section {

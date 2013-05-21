@@ -16,6 +16,11 @@ namespace Trek.Controllers
             return View();
         }
 
+        public ActionResult ParticipantEntry()
+        {
+            return View();
+        }
+
        
 
     }
