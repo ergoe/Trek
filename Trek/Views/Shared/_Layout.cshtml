@@ -1,4 +1,5 @@
 ﻿@using System.Web.Optimization
+@using Trek.Models
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -126,9 +127,11 @@
         </div> <!-- header -->
         <div id="container">
             <div id="aside">
+                
                 @Html.Partial("ImportantDatesPartial")  
+                @Html.Partial("ImportantDocumentsPartial", DataClasses.GetFiles())
             </div>
-            @RenderBody()     
+           @RenderBody()     
         </div> <!-- container -->
         <footer>
             <div id="footer">

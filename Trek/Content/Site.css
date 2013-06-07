@@ -229,6 +229,17 @@ nav ul li:hover ul.fallback {
     text-align: left;
 }
 
+.important_documents 
+{
+    padding-top: 10px;
+    margin-top: 0px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    background-color: #94857B;
+    padding-bottom: 20px;
+}
+
 .important_dates 
 {
     padding-top: 10px;
@@ -256,6 +267,17 @@ nav ul li:hover ul.fallback {
     font-weight: bold;
     font-size: 24;
 }
+
+#document_heading {
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24;
+}
+
+
 
 .important_dates ul li a {
 
@@ -287,6 +309,33 @@ nav ul li:hover ul.fallback {
 .video iframe {
     margin-left: 25px;
     margin-right: auto;
+}
+
+/***************Table Design*******************************************/
+table 
+{
+    padding: 3px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    width: 250px;
+    padding-bottom: 10px;
+}
+
+tr {
+    padding-bottom: 10px;
+}
+
+td 
+{
+    padding: 5px;
+    background-color: #94857B;
+}
+
+th {
+    text-align: left;
 }
 
 

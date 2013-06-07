@@ -3,13 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Trek.Models;
 
 namespace Trek.Controllers
 {
     public class HomeController : Controller
     {
-        //
-        // GET: /Home/
+        DataClasses objData;
+        
+        public HomeController()
+        {
+            objData = new DataClasses();
+        }
 
         public ActionResult Index()
         {
@@ -20,6 +25,14 @@ namespace Trek.Controllers
         {
             return View();
         }
+
+        [ChildActionOnly]
+        public ActionResult ImportantDocuments()
+        {
+            var files = DataClasses.GetFiles();
+            return PartialView(files);
+        }
+
 
        
 

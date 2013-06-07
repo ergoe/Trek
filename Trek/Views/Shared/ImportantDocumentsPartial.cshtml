@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Trek.Models.FileNames>
+
+<div class="important_documents">
+    <div id="document_heading">Important Documents</div>
+    <div id="table">
+        <table>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    @*<td>
+                @Html.DisplayFor(modelItem => item.FileId)
+            </td>*@
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FileName)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Download", "Download", "Registration", new {id = item.FileId}, null)
+                    </td>
+                </tr>
+            }
+        </table>
+       </div>
+</div>
