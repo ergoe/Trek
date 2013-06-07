@@ -33,105 +33,107 @@
         </script> 
     </head>
     <body>
+       
         <div id="header">
-            
-                <div>
-                    <div id="banner">
-                        <span class="Three-Dee">TRUE TO THE FAITH</span><span id="defaultCountdown"></span>
-                    </div>
-                    <div class="subHeading">
-                        Nampa 16th and 21st Wards Youth Handcart Pioneer Trek 2013
-                    </div>
-                    <div class="navigation">
-                        <nav>
-                            <ul>
-                                <li>
-                                    @Html.ActionLink("Home", "Index", "Home") 
-                                </li>
-                                <li>
-                                    <a href="#">Preparation</a>
-                                    <ul class="fallback">
-                                        <li>
-                                            @Html.ActionLink("Spiritual", "Spiritual", "Preparation")
-                                        </li>
-                                        <li>
-                                            @Html.ActionLink("Physical", "Physical", "Preparation")
-                                        </li>
-                                        <li>
-                                            @Html.ActionLink("Duty to God", "DutyToGod", "Preparation")
-                                        </li>
-                                        <li>
-                                            @Html.ActionLink("Personal Progress", "PersonalProgress", "Preparation")
-                                        </li>
-                                        <li>
-                                            @Html.ActionLink("Packing List", "PackingList", "Preparation")
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Registration</a>
-                                    <ul class="fallback">
-                                        <li>
-                                             @Html.ActionLink("Registration Form", "RegistrationForm", "Registration")
-                                        </li>
-                                        <li>
-                                             @Html.ActionLink("Permission Slip", "PermissionSlip", "Registration")
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Heritage</a>
-                                    <ul class="fallback">
-                                        <li>
-                                            @Html.ActionLink("Pioneer Stories", "PioneerStories", "Heritage")
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Ma/Pa Training</a>
-                                    <ul class="fallback">
-                                        <li>
-                                             @Html.ActionLink("Roles & Responsibilities", "RolesResponsibilities", "MaPa")
-                                        </li>
-                                        <li>
-                                             @Html.ActionLink("Trek Family", "TrekFamily", "MaPa")
-                                        </li>
-                                        <li>
-                                             @Html.ActionLink("Spiritual Preparation", "SpiritualPreparation", "MaPa")
-                                        </li>
-                                        <li>
-                                             @Html.ActionLink("Outdoor Skills", "OutdoorSkills", "MaPa")
-                                        </li>
-                                        <li>
-                                             @Html.ActionLink("Medical and Safety", "MedicalSafety", "MaPa")
-                                        </li>
-                                        <li>
-                                             @Html.ActionLink("Meals", "Meals", "MaPa")
-                                        </li>
-                                        <li>
-                                             @Html.ActionLink("Schedule", "Schedule", "MaPa")
-                                        </li>
-                                        <li>
-                                             @Html.ActionLink("Logistics", "Logistics", "MaPa")
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">Contacts</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div> <!-- navigation -->
-                </div> <!--content wrapper -->    
+                
+            <div>
+                <div id="banner">
+                    <span class="Three-Dee">TRUE TO THE FAITH</span><span id="defaultCountdown"></span>
+                </div>
+                <div class="subHeading">
+                    Nampa 16th and 21st Wards Youth Handcart Pioneer Trek 2013
+                </div>
+                <div class="navigation">
+                    <nav>
+                        <ul>
+                            <li>
+                                @Html.ActionLink("Home", "Index", "Home") 
+                            </li>
+                            <li>
+                                <a href="#">Preparation</a>
+                                <ul class="fallback">
+                                    <li>
+                                        @Html.ActionLink("Spiritual", "Spiritual", "Preparation")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Physical", "Physical", "Preparation")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Duty to God", "DutyToGod", "Preparation")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Personal Progress", "PersonalProgress", "Preparation")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Packing List", "PackingList", "Preparation")
+                                    </li>
+                                </ul>
+                            </li>
+                            @*<li>
+                                <a href="#">Registration</a>
+                                <ul class="fallback">
+                                    <li>
+                                        @Html.ActionLink("Registration Form", "RegistrationForm", "Registration")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Permission Slip", "PermissionSlip", "Registration")
+                                    </li>
+                                </ul>
+                            </li>*@
+                            <li>
+                                <a href="#">Heritage</a>
+                                <ul class="fallback">
+                                    <li>
+                                        @Html.ActionLink("Pioneer Stories", "PioneerStories", "Heritage")
+                                    </li>
+                                </ul>
+                            </li>
+                           @* <li>
+                                <a href="#">Ma/Pa Training</a>
+                                <ul class="fallback">
+                                    <li>
+                                        @Html.ActionLink("Roles & Responsibilities", "RolesResponsibilities", "MaPa")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Trek Family", "TrekFamily", "MaPa")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Spiritual Preparation", "SpiritualPreparation", "MaPa")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Outdoor Skills", "OutdoorSkills", "MaPa")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Medical and Safety", "MedicalSafety", "MaPa")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Meals", "Meals", "MaPa")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Schedule", "Schedule", "MaPa")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Logistics", "Logistics", "MaPa")
+                                    </li>
+                                </ul>
+                            </li>*@
+                            <li>
+                                <a href="#">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div> <!-- navigation -->
+            </div> <!--content wrapper -->    
             
         </div> <!-- header -->
+        
         <div id="container">
             <div id="aside">
                 
                 @Html.Partial("ImportantDatesPartial")  
                 @Html.Partial("ImportantDocumentsPartial", DataClasses.GetFiles())
             </div>
-           @RenderBody()     
+            @RenderBody()     
         </div> <!-- container -->
         <footer>
             <div id="footer">

@@ -3,6 +3,9 @@
 body {
     background-color: #937E62;
 }
+
+
+
 #container
 {
     margin-left: auto;
@@ -34,12 +37,14 @@ body {
 
 #header 
 {
+    
     height: 130px;
     width: 960px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
-    margin-bottom: 5px;    
+    margin-bottom: 5px;
+    
 }
 
 /****************************** Header *******************************/

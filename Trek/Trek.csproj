@@ -133,6 +133,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\Images\trekBack.jpg" />
+    <Content Include="Content\Images\trekWheel.jpg" />
     <Content Include="Content\Themes\Base\jquery-ui.css" />
     <Content Include="Content\jquery.countdown.css" />
     <Content Include="Content\Themes\Base\jquery.ui.accordion.css" />
