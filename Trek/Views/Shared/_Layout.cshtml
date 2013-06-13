@@ -11,7 +11,8 @@
         @Scripts.Render("~/bundles/jqueryui")
         @Scripts.Render("~/bundles/jquerycountdown")
         @RenderSection("pageScripts", required: false)
-       
+        <script src="@Url.Content("~/Scripts/jquery.validate.min.js")"></script>
+        <script src ="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")"></script>
         <script type="text/javascript">
 
             $(function() {
@@ -28,8 +29,22 @@
                                         timezone: -6});
 
             });
-            
-            
+
+            function addParticipant(participant) {
+                $.ajax({
+                    url: "http://localhost:49167/api/participant",
+                    type: 'POST',
+                    data: JSON.stringify(participant),
+                    contentType: 'application/json',
+                    success: function(data) {
+                        alert('Server method is called successfully' + data.toString);
+                    },
+                    error: function(errorText) {
+                        alert('Server returned error message');
+                    }
+                });
+            }
+
         </script> 
     </head>
     <body>

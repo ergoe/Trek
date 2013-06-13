@@ -1,0 +1,201 @@
+﻿@using Trek.Models
+ 
+@model Trek.Models.ParticipantModel
+
+@{
+    ViewBag.Title = "ParticipantEntry";
+}
+
+<h2>ParticipantEntry</h2>
+
+@using (Html.BeginForm("AddParticipant", "ParticipantEntry"))
+{
+    <table>
+        <col style="width: 100px"/>
+        <col style="width: 200px"/>
+        <col style="width: 150px"/>
+        <tr>
+            <td>
+                First Name:    
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.Fname, new { id = "fnameField" })
+            </td>
+            <td>
+                @Html.ValidationMessageFor(x => x.Fname)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Last Name:    
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.Lname, new { id = "lnameField" })
+            </td>
+            <td>
+                @Html.ValidationMessageFor(x => x.Lname)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ward:    
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.Ward, new { id = "wardField", maxlength = 2 })
+            </td>
+            <td>
+                @Html.ValidationMessageFor(x => x.Ward)
+            </td>
+        </tr>    
+        <tr>
+            <td>
+                Gender:    
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.Gender, new { id = "genderField", maxlength = 1 })
+            </td>
+            <td>
+                @Html.ValidationMessageFor(x => x.Gender)
+            </td>
+        </tr>  
+        <tr>
+            <td>
+                Age:    
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.Age, new { id = "ageField", maxlength = 2 })
+            </td>
+            <td>
+                @Html.ValidationMessageFor(x => x.Age)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Birthdate:    
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.BirthDate, new { type = "date", id = "birthDateField" })
+            </td>
+            <td></td>
+        </tr>   
+        <tr>
+            <td>
+                Address 1:    
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.Address1, new { id = "address1Field" })
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                Address 2:    
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.Address2, new { id = "address2Field" })
+            </td>
+            <td>
+                
+            </td>
+        </tr>   
+        <tr>
+            <td>
+                Phone:    
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.Phone, new { type = "phone", id = "phoneField" })
+            </td>
+            <td>
+                
+            </td>
+        </tr>  
+        <tr>
+            <td>
+                Parent/Gaurdian:    
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.ParentGaurdian, new { id = "parentGaurdianField" })
+            </td>
+            <td>
+                
+            </td>
+        </tr>   
+        <tr>
+            <td>
+                Parent Phone:    
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.ParentPhone, new { type = "phone", id = "parentPhoneField" })
+            </td>
+            <td>
+                
+            </td>
+        </tr>   
+        <tr>
+            <td>
+                Considerations:    
+            </td>
+            <td>
+                @Html.TextAreaFor(x => x.Considerations, new { id = "considerationsField" })
+            </td>
+            <td>
+                
+            </td>
+        </tr>  
+        <tr>
+            <td>
+                Medical Insurance:    
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.MedicalInsruance, new { id = "medicalInsuranceField" })
+            </td>
+            <td>
+                
+            </td>
+        </tr>    
+        <tr>
+            <td>
+                Policy Number:    
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.PolicyNumber, new { id = "policyNumberField" })
+            </td>
+            <td>
+                
+            </td>
+        </tr>    
+        <tr>
+            <td>
+                Campout Arrangements:    
+            </td>
+            <td>
+                @Html.TextAreaFor(x => x.CampoutArrangments, new { id = "arrangmentsField" })
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" id="submit" value="enter"/>
+            </td>
+            <td>
+                
+            </td>
+        </tr>            
+    </table>
+}  
+    
+@*<script type="text/javascript">
+    $("#myForm").submit(alert("hello"));
+</script>*@
+@*<input type="button" onclick="showViewbag();"/>
+    <script type="text/javascript">
+        function showViewbag() {
+            var somevalue = @ViewBag.Participant;
+            alert(somevalue);
+        }
+    </script>*@
+
+}

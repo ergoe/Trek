@@ -319,17 +319,20 @@ nav ul li:hover ul.fallback {
 /***************Table Design*******************************************/
 table 
 {
+    table-layout: fixed;
     padding: 3px;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     border-collapse: collapse;
     width: 250px;
     padding-bottom: 10px;
 }
 
-tr {
+tr 
+{
+    margin-top: 20px;
     padding-bottom: 10px;
 }
 
@@ -337,6 +340,7 @@ td
 {
     padding: 5px;
     background-color: #94857B;
+   
 }
 
 th {

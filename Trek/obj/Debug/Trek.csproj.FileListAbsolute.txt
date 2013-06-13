@@ -34,3 +34,6 @@ C:\Users\ergoeWin7VM\Documents\My Web Sites\Trek\Trek\bin\System.Web.WebPages.Ra
 C:\Users\ergoeWin7VM\Documents\My Web Sites\Trek\Trek\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\ergoeWin7VM\Documents\My Web Sites\Trek\Trek\obj\Debug\Trek.dll
 C:\Users\ergoeWin7VM\Documents\My Web Sites\Trek\Trek\obj\Debug\Trek.pdb
+C:\Users\ergoeWin7VM\Documents\My Web Sites\Trek\Trek\bin\DataAnnotationsExtensions.ClientValidation.dll
+C:\Users\ergoeWin7VM\Documents\My Web Sites\Trek\Trek\bin\DataAnnotationsExtensions.dll
+C:\Users\ergoeWin7VM\Documents\My Web Sites\Trek\Trek\bin\WebActivator.dll
