@@ -33,9 +33,9 @@ namespace Trek.Controllers
             string id = Guid.NewGuid().ToString().Substring(0, 8);
             participant.UserId = id;
             //main api
-            //string requestUrl = @"http://www.truetothefaithtrek.com/_trekapi/api/participant";
+            string requestUrl = @"http://www.truetothefaithtrek.com/_trekapi/api/participant";
             //localhost
-            string requestUrl = @"http://localhost:49167/api/participant";
+            //string requestUrl = @"http://localhost:49167/api/participant";
 
             var request = HttpWebRequest.Create(requestUrl);
 
